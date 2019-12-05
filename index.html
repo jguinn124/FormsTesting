@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<title>John's Paper Co.</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	</head>
+	<body>
+		<header>
+			<div class="h-content-wrap">
+				<img class="profile-img" src="71f98c77b241fb23cfb5a7573535f455.png" width="300" height="200">
+				<h1 class="title">John's Paper Co.</h1>
+			</div>
+		</header>
+		<main>
+				<!-- // Color2 -->
+				<section class="color2">
+					<div class="content-wrap">
+						<p class="quote1">Here at John's Paper Co. we are all about customer service and providing great paper to our community!</p>
+					</div>
+				</section>
+	
+				 <!-- // Color3 -->
+				 <section class="color3">
+						<div class="content-wrap">
+							<h2>Testimonials</h2>
+							<img class="woman-img" src="professional-woman1.jpg">
+							<br>
+							<p class="quote">“I have been working with John’s Paper Co. for 10 years now and they provide the absolute best paper ever!
+								 They can even grow paper on special paper trees. I would work with them everyday if I could.”</p>
+							<p>Heather Johnshon, Big Publishing Company</p>
+						</div>
+						<div class="content-wrap">
+
+
+							<img class="man-img" src="professional-man1.jpg">
+							<br>
+							<p class="quote">“Mr. Guinn is a dream to work with, I just wish I could beat him at golf! He lays out a quarterly plan every time I come in. 
+								I am also very curious how he can make so much paper at a low cost.”</p>
+							<p class="joeName">Joe Smith, Big Corperate Company</p>
+							<br>
+
+	
+						</div>
+				</section>
+				<section class="color3">
+					<h2>Contact Us</h2>
+					<div class="form-content-wrap">
+								<h4>Product Suggestion</h4>
+								<p>We value your input and that's why we want to hear from you. Let us know how we can help you.</p>
+								
+								
+								<form action="" style="width: 500px; margin: auto" class="main-form needs-validation1" novalidate>
+									<div class="form-group">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" class="form-control" required>
+										<div class="invalid-feedback">Please Enter a Name</div>
+									</div>
+									<div class="form-group">
+										<label for="Email">Email</label>
+										<input type="text" name="email" id="email" class="form-control" required>
+										<div class="invalid-feedback">Please Enter a Email</div>
+									</div>
+									<div class="form-group">
+										<label for="comment">Suggestion</label>
+										<textarea rows="4" cols="50" id="comment" class="form-control" required></textarea>
+										<div class="invalid-feedback">Please Enter Your Suggestion</div>
+									</div>
+									<button type="submit" class="btn btn-outline-primary">Submit</button>
+
+
+								</form>
+					</div>
+					<div class="form-content-wrap">
+							<h4>Contact Us</h4>
+							<p>We value your input and that's why we want to hear from you. Let us know how we can improve our services.</p>
+							
+							<form action="" style="width: 500px; margin: auto" class="main-form needs-validation2" novalidate>
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" class="form-control" required>
+									<div class="invalid-feedback">Please Enter a Name</div>
+								</div>
+								<div class="form-group">
+									<label for="Email">Email</label>
+									<input type="text" name="email" id="email" class="form-control" required>
+									<div class="invalid-feedback">Please Enter a Email</div>
+								</div>
+								<div class="form-group">
+										<label for="exampleFormControlSelect1">Contact Reason</label>
+										<select class="form-control" id="reason" required>
+											<option disabled selected></option>
+											<option value="1">Order question</option>
+											<option value="2">Website feedback</option>
+											<option value="3">Trouble Finding Product(use Product Suggestion)</option>
+										</select>
+								</div>
+								<div class="form-group">
+									<label for="comment">Explain</label>
+									<textarea rows="4" cols="50" id="comment" class="form-control" required></textarea>
+									<div class="invalid-feedback">Please Explain Your Reaons for Contact</div>
+								</div>
+								<button type="submit" class="btn btn-outline-info">Submit</button>
+
+
+							</form>
+					
+
+
+				</div>
+				</section>
+				<script>
+					var form = document.querySelector('.needs-validation1');
+        			form.addEventListener('submit', function(event) {
+            	if (form.checkValidity() === false) {
+                	event.preventDefault();
+                	event.stopPropagation();
+            	}
+				form.classList.add('was-validated');
+				
+				})
+				
+					var form1 = document.querySelector('.needs-validation2');
+					form1.addEventListener('submit', function(event) {
+				if (form1.checkValidity() === false) {
+					event.preventDefault();
+					event.stopPropagation();
+				}
+				form1.classList.add('was-validated');
+
+				})
+
+
+				var sel = document.getElementById('reason');
+				form1.addEventListener('submit', function(event) {
+					console.log(sel.options[sel.selectedIndex].value)
+
+					if (sel.options[sel.selectedIndex].value == 3){
+						window.scrollTo(0, 1350);
+					}
+
+
+				})
+				
+				</script>
+
+			</main>
+	
+			<footer>
+				<div class="content-wrap">
+					<h2>Personal Contact Information</h2>
+					<div class="contact-info">
+						<a class="white" href="mailto:jguinn124@gmail.com">jguinn124@gmail.com</a>
+						<br>
+					</div>
+					<p>Copyright 2019 by John Guinn</p>
+				</div>
+			</footer>
+		</body>
+	</html>

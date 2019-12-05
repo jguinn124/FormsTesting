@@ -1,0 +1,164 @@
+
+
+/*  
+-------------------------- 
+Global styles
+-------------------------- 
+*/
+
+body{
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0;
+	font-size: 18px;
+}
+
+
+
+h1{
+	font-family: Snell Roundhand, cursive;
+}
+
+
+.content-wrap{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+h2{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  
+-------------------------- 
+Header styles
+-------------------------- 
+*/
+
+.h-content-wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 18px;
+	padding-left: 40px;
+}
+
+
+
+header{
+	background: #1b264f;
+	color: #f5f3f5;
+}
+
+footer{
+	background: #1b264f;
+	color: #f5f3f5;
+
+}
+.title{
+	font-size: 85px;
+	padding: 30px;
+
+}
+
+footer{
+	text-align: center;
+}
+
+.contact-info a {
+	margin: 10px;
+}
+.profile-img{
+	width: 200px;
+	border-radius: 70%;
+	float: left;
+	padding: 40px;
+}
+
+
+
+/*  
+-------------------------- 
+Color1 styles
+-------------------------- 
+*/
+
+
+.quote1{
+	font-family: Courier;
+	text-align: center;
+	font-size: 29px;
+	color: #f5f3f5;
+}
+
+
+
+
+/*  
+-------------------------- 
+color2 styles
+-------------------------- 
+*/
+
+.color2{
+	background: #576ca8;
+}
+
+.quote{
+	font-family: Courier;
+	text-align: center;
+	font-size: 25px;
+}
+
+
+
+
+/*  
+-------------------------- 
+color3 styles
+-------------------------- 
+*/
+.color3{
+	background-color: #f5f3f5;
+}
+.woman-img{
+	border-radius: 50%;
+	float: left;
+
+}
+
+.man-img{
+	border-radius: 50%;
+	float: right;
+
+}
+.joeName{
+	text-align: right;
+}
+
+
+/*  
+-------------------------- 
+forms styles
+-------------------------- 
+*/
+
+.form-content-wrap{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 50px;
+	font-size: 21px;
+}
+
+
+
+
